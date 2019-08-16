@@ -1,0 +1,13 @@
+entero s,c,n
+inicio
+
+	c <-0
+	s <-0
+		mientras (c < 10) haga
+	c <- c+2
+		escriba c
+		llamar nueva_linea
+	s<-s+c
+		fin mientras
+		escriba s
+fin 
