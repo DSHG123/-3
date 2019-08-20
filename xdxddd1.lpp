@@ -1,0 +1,84 @@
+entero n1,N3,N4,c,f,m,l
+cadena [2] x
+caracter i
+real n2
+
+inicio 
+	escriba "ingrese un numero entero: "
+		lea n1
+		llamar nueva_linea
+        mientras n1<>123 haga
+		escriba "ingrese nuevamente: "
+		lea n1	
+		fin mientras
+		escriba "ingreso exitoso"	
+		llamar nueva_linea
+	
+	
+				escriba "ingrese una cadena de caracteres: "
+					lea x
+			si x="c" entonces 
+					escriba "realiza una suma"
+					llamar nueva_linea
+					escriba "ingrese el primer numero: "
+					lea N3
+					escriba "ingrese el segunto numero: "
+					lea N4
+					llamar nueva_linea
+					c<-N3+N4
+					escriba c
+					llamar nueva_linea		
+			sino escriba "realiza una resta"
+					llamar nueva_linea
+					escriba "ingrese el primer numero: "
+					lea N3
+					escriba "ingrese el segunto numero: "
+					lea N4
+					llamar nueva_linea
+					c<-N3-N4
+					escriba c
+					llamar nueva_linea
+			fin si
+			
+			
+						escriba "ingrese un caracter: "
+							lea i
+						si (i='p') entonces
+						    l<-0
+							f<-0
+						para l<-1 hasta 10 haga
+					        escriba l
+					        f<-f+l
+					        llamar nueva_linea      
+					    fin para
+					        escriba "la suma de los numeros anteriores es: ",f 
+					        llamar nueva_linea
+					    sino escriba "siguiente paso"
+					    fin si
+					    
+					    
+					    
+									escriba "ingrese un numero real: "
+									lea n2
+									llamar nueva_linea
+									escriba "este numero multiplicado por 5"
+									llamar nueva_linea
+									n2<-n2*5
+									llamar nueva_linea
+									escriba n2
+									llamar nueva_linea
+								
+					
+						
+		
+				
+	escriba "el numero entero digitado es: " ,n1
+		llamar nueva_linea
+	escriba "la cadena de caracteres es: " ,c
+		llamar nueva_linea
+	escriba "el caracter es: " ,i
+		llamar nueva_linea
+	escriba "el numero real es: " ,n2
+		llamar nueva_linea
+		
+fin
